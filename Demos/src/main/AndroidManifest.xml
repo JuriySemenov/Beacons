@@ -43,45 +43,17 @@
         android:label="Select Eddystone"
         android:screenOrientation="portrait"/>
 
-    <activity
-        android:name=".activities.ListNearablesActivity"
-        android:label="Select Beacon"
-        android:screenOrientation="portrait"/>
-
-    <activity android:name=".activities.DistanceBeaconActivity"
-              android:label="Distance Demo"
-              android:screenOrientation="portrait"/>
-
-    <activity android:name=".activities.NotifyDemoActivity"
-              android:label="Notify Demo"
-              android:screenOrientation="portrait"/>
-
-    <activity android:name=".activities.CharacteristicsDemoActivity"
-              android:label="Characteristics Demo"
-              android:screenOrientation="portrait"/>
-
-    <activity android:name=".activities.UpdateDemoActivity"
-              android:label="Update Firmware Demo"
-              android:screenOrientation="portrait"/>
-
-    <activity android:name=".activities.EddystoneDemoActivity"
+      <activity android:name=".activities.EddystoneDemoActivity"
         android:label="Eddystone Demo"
         android:screenOrientation="portrait"/>
 
-    <activity android:name=".activities.NearablesDemoActivity"
-        android:label="Nearables Demo"
-        android:screenOrientation="portrait"/>
+      <!--
+        There is no need any longer to declare BeaconService. It is declared in SDK's AndroidManifest.xml
+        and it will be merged to your app's AndroidManifest.xml.
 
-    <activity android:name=".activities.SensorsActivity"
-        android:label="Sensors Demo"
-        android:screenOrientation="portrait"/>
-<!--
-    There is no need any longer to declare BeaconService. It is declared in SDK's AndroidManifest.xml
-    and it will be merged to your app's AndroidManifest.xml.
-
-    <service android:name="com.estimote.sdk.service.BeaconService"
-             android:exported="false"/>
--->
+        <service android:name="com.estimote.sdk.service.BeaconService"
+                 android:exported="false"/>
+    -->
   </application>
 
 </manifest>

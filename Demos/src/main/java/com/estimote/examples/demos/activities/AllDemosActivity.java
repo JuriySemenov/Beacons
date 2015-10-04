@@ -21,34 +21,7 @@ public class AllDemosActivity extends AppCompatActivity {
     Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
     toolbar.setTitle(getTitle());
 
-    findViewById(R.id.distance_demo_button).setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        Intent intent = new Intent(AllDemosActivity.this, ListBeaconsActivity.class);
-        intent.putExtra(ListBeaconsActivity.EXTRAS_TARGET_ACTIVITY, DistanceBeaconActivity.class.getName());
-        startActivity(intent);
-      }
-    });
-    findViewById(R.id.notify_demo_button).setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        Intent intent = new Intent(AllDemosActivity.this, ListBeaconsActivity.class);
-        intent.putExtra(ListBeaconsActivity.EXTRAS_TARGET_ACTIVITY, NotifyDemoActivity.class.getName());
-        startActivity(intent);
-      }
-    });
-    findViewById(R.id.characteristics_demo_button).setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        Intent intent = new Intent(AllDemosActivity.this, ListBeaconsActivity.class);
-        intent.putExtra(ListBeaconsActivity.EXTRAS_TARGET_ACTIVITY, CharacteristicsDemoActivity.class.getName());
-        startActivity(intent);
-      }
-    });
-    findViewById(R.id.update_demo_button).setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        Intent intent = new Intent(AllDemosActivity.this, ListBeaconsActivity.class);
-        intent.putExtra(ListBeaconsActivity.EXTRAS_TARGET_ACTIVITY, UpdateDemoActivity.class.getName());
-        startActivity(intent);
-      }
-    });
+
     findViewById(R.id.eddystone_demo_button).setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
         Intent intent = new Intent(AllDemosActivity.this, ListEddystoneActivity.class);
@@ -56,20 +29,8 @@ public class AllDemosActivity extends AppCompatActivity {
         startActivity(intent);
       }
     });
-    findViewById(R.id.nearables_demo_button).setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        Intent intent = new Intent(AllDemosActivity.this, ListNearablesActivity.class);
-        intent.putExtra(ListNearablesActivity.EXTRAS_TARGET_ACTIVITY, NearablesDemoActivity.class.getName());
-        startActivity(intent);
-      }
-    });
 
-    findViewById(R.id.sensors_demo_button).setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        Intent intent = new Intent(AllDemosActivity.this, ListBeaconsActivity.class);
-        intent.putExtra(ListNearablesActivity.EXTRAS_TARGET_ACTIVITY, SensorsActivity.class.getName());
-        startActivity(intent);
-      }
-    });
+
+
   }
 }
