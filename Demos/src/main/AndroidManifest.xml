@@ -3,7 +3,7 @@
           package="com.estimote.examples.demos"
           android:versionCode="1"
           android:versionName="1.0">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
 <!--
   You do not longer need to declare those permissions. Since SDK declares them,
   there is no need for you to add those since SDK's AndroidManifest.xml will be merged
@@ -33,19 +33,14 @@
       </intent-filter>
     </activity>
 
-    <activity
-        android:name=".activities.ListBeaconsActivity"
-        android:label="Select Beacon"
-        android:screenOrientation="portrait"/>
-
-    <activity
+      <activity
         android:name=".activities.ListEddystoneActivity"
         android:label="Select Eddystone"
         android:screenOrientation="portrait"/>
 
-      <activity android:name=".activities.EddystoneDemoActivity"
-        android:label="Eddystone Demo"
-        android:screenOrientation="portrait"/>
+      <activity android:name=".activities.Events"
+          android:label="Events"
+          android:screenOrientation="portrait"/>
 
       <!--
         There is no need any longer to declare BeaconService. It is declared in SDK's AndroidManifest.xml

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/event_frame"
+    android:layout_width="288dip"
+    android:layout_height="wrap_content"
+    android:padding="5dip">
+
+
+
+    <LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:id="@+id/frames_container"
+        android:layout_width="288dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true">
+
+    <ImageView
+        android:id="@+id/event_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/standart_logo"
+       />
+    <TextView
+        android:id="@+id/event_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event_logo"
+        android:layout_alignLeft="@+id/event_logo"
+        android:layout_marginTop="5dip"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textStyle="normal"
+        android:textSize="12dp" />
+
+
+    <TextView
+        android:id="@+id/event_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/event_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/event_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:textColor="@android:color/black"
+        android:textStyle="normal"
+        android:textSize="12dp"
+        android:lines="3" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -13,6 +13,7 @@
       android:layout_marginRight="10dp"
       android:padding="10dp"
       android:src="@drawable/beacon_gray"
+      android:clickable="true"
       />
 
   <LinearLayout
@@ -22,6 +23,7 @@
       android:layout_gravity="center_vertical"
       android:gravity="center_vertical"
       android:orientation="vertical"
+      android:clickable="true"
       >
 
     <TextView
